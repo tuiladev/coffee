@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $gray-color;
+}
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

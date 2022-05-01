@@ -1,0 +1,29 @@
+.btn {
+  display: inline-block;
+  line-height: 1;
+  &--primary {
+    color: $white-color;
+    padding: 1.5rem 3rem;
+    min-width: 18rem;
+    transition: all 0.3s ease-in-out;
+    background-color: $blue-dark-color;
+    &:hover {
+      box-shadow: 10px 25px 60px rgba(31, 33, 49, 0.25);
+    }
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -4px;
+      border: 4px solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(
+        145.38deg,
+        rgba(31, 33, 49, 0.9) 5.27%,
+        rgba(31, 33, 49, 0) 36.75%,
+        rgba(255, 255, 255, 0.31) 64.7%,
+        rgba(31, 33, 49, 0.8) 89.02%
+      );
+    }
+  }
+}

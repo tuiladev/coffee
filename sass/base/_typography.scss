@@ -1,0 +1,45 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: $text-size;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $text-color;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-family: $secondary-font;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $gray-dark-color;
+  margin-bottom: 3.2rem;
+  text-transform: capitalize;
+}
+
+.heading-primary {
+  font-size: 7rem;
+  text-transform: capitalize;
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+}
+
+.sub-heading {
+  font-size: 1.6rem;
+  font-style: italic;
+  letter-spacing: 3px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $orange-color;
+  margin-bottom: 1.2rem;
+}
+
+strong {
+  font-weight: 600;
+  color: $gray-medium-color;
+}

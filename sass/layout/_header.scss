@@ -1,0 +1,86 @@
+.header {
+  padding: 2rem 0;
+  &-main {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    height: 4rem;
+  }
+  &__tool {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &__icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+.main-nav {
+  list-style: none;
+  display: flex;
+  gap: 6.4rem;
+  &-link {
+    &--active {
+      color: $gray-medium-color;
+    }
+  }
+}
+
+#mobile-nav,
+.mobile-nav-btn {
+  display: none;
+}
+
+.icon-mobile-nav {
+  font-size: 4rem;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+#mobile-nav:checked ~ .mobile-nav-btn .icon-mobile-nav[name="close-outline"] {
+  display: block;
+}
+#mobile-nav:checked ~ .mobile-nav-btn .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
+
+#mobile-nav:checked ~ nav {
+  display: block;
+  & .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5em;
+    z-index: 99;
+    animation: slide 0.4s ease;
+  }
+}
+#mobile-nav:checked ~ .mobile-nav-btn .icon-mobile-nav {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  z-index: 999;
+}
+
+@keyframes slide {
+  0% {
+    left: 100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}

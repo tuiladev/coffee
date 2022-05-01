@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Couffeeee - Coffee Shop and Dessert</title>
+    <link rel="icon" href="./img/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,500;1,600&family=Kaisei+Decol:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-main">
+          <!-- Logo -->
+          <a href="#">
+            <img
+              src="./img/couffeeee-logo.svg"
+              class="header__logo"
+              alt="Couffeee Logo"
+            />
+          </a>
+
+          <!-- Menu Togle -->
+          <input type="checkbox" id="mobile-nav" />
+          <label for="mobile-nav" class="mobile-nav-btn">
+            <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+            <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+          </label>
+
+          <!-- Navigation -->
+          <nav>
+            <ul class="main-nav">
+              <li>
+                <a class="main-nav-link main-nav-link--active" href="#">Home</a>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#menu">Menu</a>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#facility">Facility</a>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#reviews">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Tool -->
+          <a href="tel:+0012-3400-5006" class="header__tool">
+            <ion-icon class="header__tool__icon" name="call-outline"></ion-icon>
+            (+00) 0012-3400-5006
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-main">
+            <div class="hero-content">
+              <h3 class="sub-heading">Couffeeee</h3>
+              <h1 class="heading-primary">Enjoy your morning coffee.</h1>
+              <p class="hero-caption">
+                Boost your productivity and build your mood with a glass of
+                coffee in the morning.
+              </p>
+              <div class="hero-tools">
+                <a href="#" class="btn btn--primary">Get your now</a>
+                <a href="#" class="btn bd-bottom-small">Reservation</a>
+              </div>
+            </div>
+            <div class="hero-illustration">
+              <div class="hero-image-box">
+                <img class="hero-image" src="./img/hero.jpg" alt="Coffee cup" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-section">
+        <div class="container">
+          <h2 class="feature-title">
+            Enjoy your coffee in our comfortable place
+          </h2>
+          <ul class="feature-list">
+            <li>
+              <p class="feature-number">50<span>+</span></p>
+              <p class="feature-caption">Private room</p>
+            </li>
+            <li>
+              <p class="feature-number">25<span>+</span></p>
+              <p class="feature-caption">Event space</p>
+            </li>
+            <li>
+              <p class="feature-number">15<span>+</span></p>
+              <p class="feature-caption">Creative studio</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="menu" class="menu-section menu-section--dark">
+        <div class="container">
+          <div class="menu-main">
+            <div class="menu-illustration">
+              <div class="menu-image-box">
+                <img
+                  src="./img/our-coffee.jpg"
+                  class="menu-image"
+                  alt="Our coffee"
+                />
+              </div>
+              <div class="image-caption image-caption-bottom-right">
+                <p>“I really love the Cappucino. The coffee was very smooth</p>
+                <div class="image-icon-box">
+                  <ion-icon class="image-icon" name="heart-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="menu-content">
+              <h3 class="sub-heading">Our coffee</h3>
+              <h2 class="heading-secondary cl-white">
+                Choose your favorite coffee
+              </h2>
+              <p class="menu-caption cl-white-lt">
+                More than 100+ type of coffee are ready to serve by our
+                professionals
+              </p>
+              <div class="sub-menu">
+                <ul class="sub-menu-list">
+                  <li class="sub-menu-item sub-menu-item--active">Cappucino</li>
+                  <li class="sub-menu-item">Late</li>
+                  <li class="sub-menu-item">Arabica</li>
+                </ul>
+                <a href="#" class="sub-menu-link bd-bottom-small">More menu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="menu-section menu-section--light">
+        <div class="container">
+          <div class="menu-main">
+            <div class="menu-content">
+              <h3 class="sub-heading">Our dishes</h3>
+              <h2 class="heading-secondary">
+                Complete Your Coffee with Our Dishes
+              </h2>
+              <p class="menu-caption">
+                Enjoy your coffee with our tasty dishes that will build your
+                mood.
+              </p>
+              <div class="sub-menu">
+                <ul class="sub-menu-list">
+                  <li class="sub-menu-item">Black Forest</li>
+                  <li class="sub-menu-item sub-menu-item--active">Crème</li>
+                  <li class="sub-menu-item sub-menu-item--active">Tiramisu</li>
+                </ul>
+                <a href="#" class="sub-menu-link bd-bottom-small">More menu</a>
+              </div>
+            </div>
+            <div class="menu-illustration">
+              <div class="menu-image-box">
+                <img
+                  src="./img/our-dish.jpg"
+                  class="menu-image"
+                  alt="Our dishes"
+                />
+              </div>
+              <div class="image-caption image-caption-top-left">
+                <p>“I really love the Cappucino. The coffee was very smooth</p>
+                <div class="image-icon-box">
+                  <ion-icon class="image-icon" name="heart-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="facility" class="facility-section">
+        <div class="container">
+          <div class="facility-top">
+            <h3 class="sub-heading">Our facility</h3>
+            <h2 class="heading-secondary">Be comfort in our places</h2>
+            <p class="facility-caption">
+              Our place designed by pro architecture with psychologist to build
+              best place suit you
+            </p>
+          </div>
+        </div>
+        <div class="facility-bottom">
+          <div class="container">
+            <div class="facility-gallery">
+              <div class="facility-gallery-item">
+                <img src="./img/gallery-1.jpg" alt="" class="facility-image" />
+                <div class="facility-text-box facility-text-box-left">
+                  <p class="facility-text">
+                    Designed by professional interior designer and well-known
+                    artirst
+                  </p>
+                </div>
+              </div>
+              <div class="facility-gallery-item">
+                <img src="./img/gallery-2.jpg" alt="" class="facility-image" />
+              </div>
+              <div class="facility-gallery-item">
+                <img src="./img/gallery-3.jpg" alt="" class="facility-image" />
+              </div>
+              <div class="facility-gallery-item">
+                <img src="./img/gallery-4.jpg" alt="" class="facility-image" />
+                <div class="facility-text-box facility-text-box-right">
+                  <p class="facility-text">
+                    Prepared only to make our customer feel comfortable
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-section">
+        <div class="container">
+          <p class="featured-title">
+            They trust <strong>Couffeeee</strong> as their work place
+          </p>
+          <ul class="featured-logos">
+            <li>
+              <img
+                src="./img/Kopi-ABC.svg"
+                alt="Kopi ABC"
+                class="featured-logo"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/tanamera.svg"
+                alt="Tanamera"
+                class="featured-logo"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/jj-royal.svg"
+                alt="JJ Royal"
+                class="featured-logo"
+              />
+            </li>
+            <li>
+              <img
+                src="./img/nescafe.svg"
+                alt="Nescafe"
+                class="featured-logo"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="reviews" class="review-section">
+        <div class="container">
+          <div class="review-main">
+            <div class="review-text">
+              <h3 class="sub-heading">Our review</h3>
+              <h2 class="heading-secondary">Let our customer talk about us</h2>
+              <p class="review-caption">
+                We always providing the best to make our customer pleasent with
+                our services.
+              </p>
+              <div class="review-control">
+                <label
+                  class="review-control--pre bd-bottom-small"
+                  for="radio-pre"
+                >
+                  Before</label
+                >
+                <label
+                  class="review-control--next review-control--active bd-bottom-small"
+                  for="radio-next"
+                  >Next</label
+                >
+              </div>
+            </div>
+            <div class="review-slider">
+              <div class="review-slides">
+                <input type="radio" name="radio-btn" id="radio-pre" />
+                <input type="radio" name="radio-btn" id="radio-next" />
+                <div class="review-box first">
+                  <p class="review-content">
+                    “I really love the Cappucinas. The coffee was very smooth. I
+                    really love the Cappucinas. The coffee was very smooth.”
+                  </p>
+                  <p class="review-author">Michael Jack.</p>
+                  <p class="review-for">- Coffee Lover</p>
+                </div>
+                <div class="review-box second">
+                  <p class="review-content">
+                    “I really love the Cappucinas. The coffee was very smooth. I
+                    really love the Cappucinas. The coffee was very smooth.”
+                  </p>
+                  <p class="review-author">Michael Jack.</p>
+                  <p class="review-for">- Coffee Lover</p>
+                </div>
+                <div class="review-box">
+                  <p class="review-content">
+                    “I really love the Cappucinas. The coffee was very smooth. I
+                    really love the Cappucinas. The coffee was very smooth.”
+                  </p>
+                  <p class="review-author">Michael Jack.</p>
+                  <p class="review-for">- Coffee Lover</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-main">
+            <h2 class="heading-secondary">Take your coffee now</h2>
+            <p class="cta-caption">
+              Don’t let your coffee cold, let’s go to
+              <strong>Couffeeee</strong> and get your coffee and boost your day
+              now.
+            </p>
+            <a href="#" class="btn btn--primary">Our Location</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo-col">
+            <a href="./index.html">
+              <img
+                src="./img/couffeeee-logo--white.svg"
+                alt="Couffeeee"
+                class="footer-logo"
+              />
+            </a>
+            <p class="footer-caption">
+              Couffeee is a cafe that serve many variant of coffee and other
+              dishes with very comfortable place.
+            </p>
+            <address class="footer-address">
+              <ion-icon
+                class="footer-address__icon"
+                name="location-outline"
+              ></ion-icon>
+              <p class="footer-address__text">
+                JI. Soedirman no 45. Jakarta Selatan. Indonesia
+              </p>
+            </address>
+          </div>
+          <div class="footer-nav-col">
+            <h3 class="footer-nav-title">Facility</h3>
+            <ul class="footer-nav-list">
+              <li><a href="#" class="footer-nav-link">Private room</a></li>
+              <li><a href="#" class="footer-nav-link">Meeting room</a></li>
+              <li><a href="#" class="footer-nav-link">Event space</a></li>
+              <li><a href="#" class="footer-nav-link">Creative studio</a></li>
+              <li><a href="#" class="footer-nav-link">Custom room</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h3 class="footer-nav-title">Product</h3>
+            <ul class="footer-nav-list">
+              <li><a href="#" class="footer-nav-link">coffee</a></li>
+              <li><a href="#" class="footer-nav-link">beverages</a></li>
+              <li><a href="#" class="footer-nav-link">dishes</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h3 class="footer-nav-title">Support</h3>
+            <ul class="footer-nav-list">
+              <li><a href="#" class="footer-nav-link">About us</a></li>
+              <li><a href="#" class="footer-nav-link">FAQs</a></li>
+              <li><a href="#" class="footer-nav-link">Privacy policy</a></li>
+              <li><a href="#" class="footer-nav-link">Help me</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2021 Couffeeee. All right reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

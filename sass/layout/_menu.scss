@@ -1,0 +1,129 @@
+.menu {
+  &-section {
+    padding: 12rem 0;
+    &--dark {
+      background-color: $gray-dark-color;
+    }
+  }
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &-illustration {
+    width: 80%;
+    position: relative;
+  }
+  &-image-box {
+    @include image_box(9px);
+  }
+  &-content {
+    align-self: center;
+  }
+  &-caption {
+    width: 70%;
+    margin-bottom: 5.6rem;
+  }
+}
+.sub-menu {
+  &-list {
+    list-style: none;
+    display: flex;
+    gap: 4.8rem;
+    margin-bottom: 4.8rem;
+    font-family: $secondary-font;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  &-item {
+    position: relative;
+    color: currentColor;
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 60%;
+      left: calc(100% + 2.4rem);
+      transform: translate(-50%, -50%);
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      background-color: $white-light-color;
+    }
+    &--active {
+      color: $orange-color;
+    }
+  }
+  &-link {
+    color: currentColor;
+    line-height: 1;
+    font-weight: 500;
+  }
+}
+
+.menu-section--light {
+  .menu-main {
+    justify-items: end;
+  }
+  .sub-menu {
+    color: $gray-medium-color;
+    &-item:not(:last-child)::after {
+      background-color: $gray-light;
+    }
+  }
+}
+
+.menu-section--dark {
+  .menu-main {
+    justify-items: start;
+  }
+  .sub-menu {
+    color: $white-color;
+  }
+}
+
+.image-caption {
+  position: absolute;
+  &-bottom-right {
+    right: -6rem;
+    bottom: 4rem;
+  }
+  &-top-left {
+    top: 6rem;
+    left: -6rem;
+  }
+  max-width: 40rem;
+  border: 6px solid;
+  border-image: linear-gradient(
+    90deg,
+    #2b2f33 33.3%,
+    rgba(255, 255, 255, 0.7) 48.55%,
+    #ffffff 72.37%
+  );
+  border-image-slice: 1;
+  padding: 2.4rem 5.6rem;
+  background-color: #fff;
+  p {
+    font-size: 2rem;
+    color: $gray-medium-color;
+  }
+}
+.image-icon-box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  background-color: $gray-dark-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-icon {
+  color: $white-color;
+  width: 3.2rem;
+  height: 3.2rem;
+}
